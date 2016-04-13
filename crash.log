@@ -1,0 +1,273 @@
+Crashlog created at 2016-04-13 18:20:08 +0530
+
+===== MESSAGE:
+
+Nanoc::Int::Errors::UnknownLayout: The site does not have a layout with identifier “employee/*.*”.
+
+===== COMPILATION STACK:
+
+  - [item]   /index.html (rep default)
+
+===== STACK TRACE:
+
+  0. /home/ubuntu-admin/.rvm/gems/ruby-2.2.3/gems/nanoc-4.1.5/lib/nanoc/base/services/executor.rb:141:in `find_layout'
+  1. /home/ubuntu-admin/.rvm/gems/ruby-2.2.3/gems/nanoc-4.1.5/lib/nanoc/base/services/executor.rb:58:in `layout'
+  2. /home/ubuntu-admin/.rvm/gems/ruby-2.2.3/gems/nanoc-4.1.5/lib/nanoc/base/compilation/compiler.rb:257:in `block in recalculate_content_for_rep'
+  3. /home/ubuntu-admin/.rvm/gems/ruby-2.2.3/gems/nanoc-4.1.5/lib/nanoc/base/entities/rule_memory.rb:44:in `block in each'
+  4. /home/ubuntu-admin/.rvm/gems/ruby-2.2.3/gems/nanoc-4.1.5/lib/nanoc/base/entities/rule_memory.rb:44:in `each'
+  5. /home/ubuntu-admin/.rvm/gems/ruby-2.2.3/gems/nanoc-4.1.5/lib/nanoc/base/entities/rule_memory.rb:44:in `each'
+  6. /home/ubuntu-admin/.rvm/gems/ruby-2.2.3/gems/nanoc-4.1.5/lib/nanoc/base/compilation/compiler.rb:252:in `recalculate_content_for_rep'
+  7. /home/ubuntu-admin/.rvm/gems/ruby-2.2.3/gems/nanoc-4.1.5/lib/nanoc/base/compilation/compiler.rb:227:in `compile_rep'
+  8. /home/ubuntu-admin/.rvm/gems/ruby-2.2.3/gems/nanoc-4.1.5/lib/nanoc/base/compilation/compiler.rb:202:in `block in compile_reps'
+  9. /home/ubuntu-admin/.rvm/gems/ruby-2.2.3/gems/nanoc-4.1.5/lib/nanoc/base/services/item_rep_selector.rb:18:in `block in each'
+  10. /home/ubuntu-admin/.rvm/gems/ruby-2.2.3/gems/nanoc-4.1.5/lib/nanoc/base/services/item_rep_selector.rb:13:in `loop'
+  11. /home/ubuntu-admin/.rvm/gems/ruby-2.2.3/gems/nanoc-4.1.5/lib/nanoc/base/services/item_rep_selector.rb:13:in `each'
+  12. /home/ubuntu-admin/.rvm/gems/ruby-2.2.3/gems/nanoc-4.1.5/lib/nanoc/base/compilation/compiler.rb:200:in `compile_reps'
+  13. /home/ubuntu-admin/.rvm/gems/ruby-2.2.3/gems/nanoc-4.1.5/lib/nanoc/base/compilation/compiler.rb:103:in `block in run'
+  14. /home/ubuntu-admin/.rvm/gems/ruby-2.2.3/gems/nanoc-4.1.5/lib/nanoc/base/compilation/dependency_tracker.rb:18:in `run'
+  15. /home/ubuntu-admin/.rvm/gems/ruby-2.2.3/gems/nanoc-4.1.5/lib/nanoc/base/compilation/compiler.rb:102:in `run'
+  16. /home/ubuntu-admin/.rvm/gems/ruby-2.2.3/gems/nanoc-4.1.5/lib/nanoc/base/compilation/compiler.rb:89:in `run_all'
+  17. /home/ubuntu-admin/.rvm/gems/ruby-2.2.3/gems/nanoc-4.1.5/lib/nanoc/base/entities/site.rb:24:in `compile'
+  18. /home/ubuntu-admin/.rvm/gems/ruby-2.2.3/gems/nanoc-4.1.5/lib/nanoc/cli/commands/compile.rb:375:in `block in run'
+  19. /home/ubuntu-admin/.rvm/gems/ruby-2.2.3/gems/nanoc-4.1.5/lib/nanoc/cli/commands/compile.rb:417:in `run_listeners_while'
+  20. /home/ubuntu-admin/.rvm/gems/ruby-2.2.3/gems/nanoc-4.1.5/lib/nanoc/cli/commands/compile.rb:374:in `run'
+  21. /home/ubuntu-admin/.rvm/gems/ruby-2.2.3/gems/nanoc-4.1.5/lib/nanoc/cli/command_runner.rb:12:in `block in call'
+  22. /home/ubuntu-admin/.rvm/gems/ruby-2.2.3/gems/nanoc-4.1.5/lib/nanoc/cli/error_handler.rb:64:in `handle_while'
+  23. /home/ubuntu-admin/.rvm/gems/ruby-2.2.3/gems/nanoc-4.1.5/lib/nanoc/cli/error_handler.rb:22:in `handle_while'
+  24. /home/ubuntu-admin/.rvm/gems/ruby-2.2.3/gems/nanoc-4.1.5/lib/nanoc/cli/command_runner.rb:11:in `call'
+  25. /home/ubuntu-admin/.rvm/gems/ruby-2.2.3/gems/cri-2.7.0/lib/cri/command_dsl.rb:233:in `block in runner'
+  26. /home/ubuntu-admin/.rvm/gems/ruby-2.2.3/gems/cri-2.7.0/lib/cri/command.rb:294:in `call'
+  27. /home/ubuntu-admin/.rvm/gems/ruby-2.2.3/gems/cri-2.7.0/lib/cri/command.rb:294:in `run_this'
+  28. /home/ubuntu-admin/.rvm/gems/ruby-2.2.3/gems/cri-2.7.0/lib/cri/command.rb:247:in `run'
+  29. /home/ubuntu-admin/.rvm/gems/ruby-2.2.3/gems/nanoc-4.1.5/lib/nanoc/cli/commands/nanoc.rb:37:in `block in define'
+  30. /home/ubuntu-admin/.rvm/gems/ruby-2.2.3/gems/cri-2.7.0/lib/cri/command.rb:294:in `call'
+  31. /home/ubuntu-admin/.rvm/gems/ruby-2.2.3/gems/cri-2.7.0/lib/cri/command.rb:294:in `run_this'
+  32. /home/ubuntu-admin/.rvm/gems/ruby-2.2.3/gems/cri-2.7.0/lib/cri/command.rb:247:in `run'
+  33. /home/ubuntu-admin/.rvm/gems/ruby-2.2.3/gems/nanoc-4.1.5/lib/nanoc/cli.rb:53:in `block in run'
+  34. /home/ubuntu-admin/.rvm/gems/ruby-2.2.3/gems/nanoc-4.1.5/lib/nanoc/cli/error_handler.rb:64:in `handle_while'
+  35. /home/ubuntu-admin/.rvm/gems/ruby-2.2.3/gems/nanoc-4.1.5/lib/nanoc/cli/error_handler.rb:22:in `handle_while'
+  36. /home/ubuntu-admin/.rvm/gems/ruby-2.2.3/gems/nanoc-4.1.5/lib/nanoc/cli.rb:51:in `run'
+  37. /home/ubuntu-admin/.rvm/gems/ruby-2.2.3/gems/nanoc-4.1.5/bin/nanoc:9:in `<top (required)>'
+  38. /home/ubuntu-admin/.rvm/gems/ruby-2.2.3/bin/nanoc:23:in `load'
+  39. /home/ubuntu-admin/.rvm/gems/ruby-2.2.3/bin/nanoc:23:in `<main>'
+  40. /home/ubuntu-admin/.rvm/gems/ruby-2.2.3/bin/ruby_executable_hooks:15:in `eval'
+
+===== VERSION INFORMATION:
+
+Nanoc 4.1.5 © 2007-2016 Denis Defreyne.
+Running ruby 2.2.3 (2015-08-18) on x86_64-linux with RubyGems 2.4.8.
+
+===== SYSTEM INFORMATION:
+
+Linux ubuntu-admin 3.16.0-67-generic #87~14.04.1-Ubuntu SMP Fri Mar 11 00:26:02 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
+
+===== INSTALLED GEMS:
+
+  adsf 1.2.0
+  builder 3.2.2
+  bundler 1.11.2
+  celluloid 0.16.0
+  coderay 1.1.0
+  colored 1.2
+  commonjs 0.2.7
+  cri 2.7.0
+  daemons 1.2.2
+  diff-lcs 1.2.5
+  eventmachine 1.0.7
+  ffi 1.9.8
+  formatador 0.2.5
+  guard 2.12.5
+  guard-nanoc 1.0.2
+  hitimes 1.2.2
+  json 1.8.1
+  less 2.6.0
+  libv8 3.16.14.7
+  listen 2.10.0
+  lumberjack 1.0.9
+  method_source 0.8.2
+  mime-types 2.3
+  mini_portile 0.5.3
+  nanoc 4.1.5
+  nenv 0.2.0
+  nokogiri 1.6.1
+  notiffany 0.0.6
+  pry 0.10.1
+  rack 1.6.0
+  rb-fsevent 0.9.4
+  rb-inotify 0.9.5
+  ref 1.0.5
+  rspec 2.14.1
+  rspec-core 2.14.8
+  rspec-expectations 2.14.5
+  rspec-mocks 2.14.6
+  shellany 0.0.1
+  slop 3.6.0
+  therubyracer 0.12.1
+  thin 1.6.2
+  thor 0.19.1
+  timers 4.0.1
+
+===== GEMFILE.LOCK:
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    adsf (1.2.0)
+      rack (>= 1.0.0)
+    builder (3.2.2)
+    celluloid (0.16.0)
+      timers (~> 4.0.0)
+    coderay (1.1.0)
+    colored (1.2)
+    commonjs (0.2.7)
+    cri (2.7.0)
+      colored (~> 1.2)
+    daemons (1.2.2)
+    diff-lcs (1.2.5)
+    eventmachine (1.0.7)
+    ffi (1.9.8)
+    formatador (0.2.5)
+    guard (2.12.5)
+      formatador (>= 0.2.4)
+      listen (~> 2.7)
+      lumberjack (~> 1.0)
+      nenv (~> 0.1)
+      notiffany (~> 0.0)
+      pry (>= 0.9.12)
+      shellany (~> 0.0)
+      thor (>= 0.18.1)
+    guard-nanoc (1.0.2)
+      guard (>= 1.8.0)
+      nanoc (>= 3.6.3)
+    hitimes (1.2.2)
+    json (1.8.1)
+    less (2.6.0)
+      commonjs (~> 0.2.7)
+    libv8 (3.16.14.7)
+    listen (2.10.0)
+      celluloid (~> 0.16.0)
+      rb-fsevent (>= 0.9.3)
+      rb-inotify (>= 0.9)
+    lumberjack (1.0.9)
+    method_source (0.8.2)
+    mime-types (2.3)
+    mini_portile (0.5.3)
+    nanoc (4.1.5)
+      cri (~> 2.3)
+    nenv (0.2.0)
+    nokogiri (1.6.1)
+      mini_portile (~> 0.5.0)
+    notiffany (0.0.6)
+      nenv (~> 0.1)
+      shellany (~> 0.0)
+    pry (0.10.1)
+      coderay (~> 1.1.0)
+      method_source (~> 0.8.1)
+      slop (~> 3.4)
+    rack (1.6.0)
+    rb-fsevent (0.9.4)
+    rb-inotify (0.9.5)
+      ffi (>= 0.5.0)
+    ref (1.0.5)
+    rspec (2.14.1)
+      rspec-core (~> 2.14.0)
+      rspec-expectations (~> 2.14.0)
+      rspec-mocks (~> 2.14.0)
+    rspec-core (2.14.8)
+    rspec-expectations (2.14.5)
+      diff-lcs (>= 1.1.3, < 2.0)
+    rspec-mocks (2.14.6)
+    shellany (0.0.1)
+    slop (3.6.0)
+    therubyracer (0.12.1)
+      libv8 (~> 3.16.14.0)
+      ref
+    thin (1.6.2)
+      daemons (>= 1.0.9)
+      eventmachine (>= 1.0.0)
+      rack (>= 1.0.0)
+    thor (0.19.1)
+    timers (4.0.1)
+      hitimes
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  adsf (= 1.2.0)
+  builder (= 3.2.2)
+  bundler (~> 1.11.2)
+  guard-nanoc (= 1.0.2)
+  json (= 1.8.1)
+  less (= 2.6.0)
+  mime-types (= 2.3)
+  nanoc (~> 4.1.5)
+  nokogiri (= 1.6.1)
+  rspec (= 2.14.1)
+  therubyracer (= 0.12.1)
+  thin (= 1.6.2)
+
+BUNDLED WITH
+   1.11.2
+
+===== LOAD PATHS:
+
+  0. /home/ubuntu-admin/.rvm/gems/ruby-2.2.3/gems/thin-1.6.2/lib
+  1. /home/ubuntu-admin/.rvm/gems/ruby-2.2.3/extensions/x86_64-linux/2.2.0/thin-1.6.2
+  2. /home/ubuntu-admin/.rvm/gems/ruby-2.2.3/gems/therubyracer-0.12.1/lib
+  3. /home/ubuntu-admin/.rvm/gems/ruby-2.2.3/gems/therubyracer-0.12.1/ext
+  4. /home/ubuntu-admin/.rvm/gems/ruby-2.2.3/extensions/x86_64-linux/2.2.0/therubyracer-0.12.1
+  5. /home/ubuntu-admin/.rvm/gems/ruby-2.2.3/gems/rspec-2.14.1/lib
+  6. /home/ubuntu-admin/.rvm/gems/ruby-2.2.3/gems/rspec-mocks-2.14.6/lib
+  7. /home/ubuntu-admin/.rvm/gems/ruby-2.2.3/gems/rspec-expectations-2.14.5/lib
+  8. /home/ubuntu-admin/.rvm/gems/ruby-2.2.3/gems/rspec-core-2.14.8/lib
+  9. /home/ubuntu-admin/.rvm/gems/ruby-2.2.3/gems/ref-1.0.5/lib
+  10. /home/ubuntu-admin/.rvm/gems/ruby-2.2.3/gems/nokogiri-1.6.1/lib
+  11. /home/ubuntu-admin/.rvm/gems/ruby-2.2.3/extensions/x86_64-linux/2.2.0/nokogiri-1.6.1
+  12. /home/ubuntu-admin/.rvm/gems/ruby-2.2.3/gems/mini_portile-0.5.3/lib
+  13. /home/ubuntu-admin/.rvm/gems/ruby-2.2.3/gems/mime-types-2.3/lib
+  14. /home/ubuntu-admin/.rvm/gems/ruby-2.2.3/gems/libv8-3.16.14.7-x86_64-linux/lib
+  15. /home/ubuntu-admin/.rvm/gems/ruby-2.2.3/gems/libv8-3.16.14.7-x86_64-linux/ext
+  16. /home/ubuntu-admin/.rvm/gems/ruby-2.2.3/gems/less-2.6.0/lib
+  17. /home/ubuntu-admin/.rvm/rubies/ruby-2.2.3/lib/ruby/gems/2.2.0/gems/json-1.8.1/lib
+  18. /home/ubuntu-admin/.rvm/gems/ruby-2.2.3/gems/guard-nanoc-1.0.2/lib
+  19. /home/ubuntu-admin/.rvm/gems/ruby-2.2.3/gems/nanoc-4.1.5/lib
+  20. /home/ubuntu-admin/.rvm/gems/ruby-2.2.3/gems/guard-2.12.5/lib
+  21. /home/ubuntu-admin/.rvm/gems/ruby-2.2.3/gems/thor-0.19.1/lib
+  22. /home/ubuntu-admin/.rvm/gems/ruby-2.2.3/gems/pry-0.10.1/lib
+  23. /home/ubuntu-admin/.rvm/gems/ruby-2.2.3/gems/slop-3.6.0/lib
+  24. /home/ubuntu-admin/.rvm/gems/ruby-2.2.3/gems/method_source-0.8.2/lib
+  25. /home/ubuntu-admin/.rvm/gems/ruby-2.2.3/gems/notiffany-0.0.6/lib
+  26. /home/ubuntu-admin/.rvm/gems/ruby-2.2.3/gems/shellany-0.0.1/lib
+  27. /home/ubuntu-admin/.rvm/gems/ruby-2.2.3/gems/nenv-0.2.0/lib
+  28. /home/ubuntu-admin/.rvm/gems/ruby-2.2.3/gems/lumberjack-1.0.9/lib
+  29. /home/ubuntu-admin/.rvm/gems/ruby-2.2.3/gems/listen-2.10.0/lib
+  30. /home/ubuntu-admin/.rvm/gems/ruby-2.2.3/gems/rb-inotify-0.9.5/lib
+  31. /home/ubuntu-admin/.rvm/gems/ruby-2.2.3/gems/rb-fsevent-0.9.4/lib
+  32. /home/ubuntu-admin/.rvm/gems/ruby-2.2.3/gems/formatador-0.2.5/lib
+  33. /home/ubuntu-admin/.rvm/gems/ruby-2.2.3/gems/ffi-1.9.8/lib
+  34. /home/ubuntu-admin/.rvm/gems/ruby-2.2.3/extensions/x86_64-linux/2.2.0/ffi-1.9.8
+  35. /home/ubuntu-admin/.rvm/gems/ruby-2.2.3/gems/eventmachine-1.0.7/lib
+  36. /home/ubuntu-admin/.rvm/gems/ruby-2.2.3/extensions/x86_64-linux/2.2.0/eventmachine-1.0.7
+  37. /home/ubuntu-admin/.rvm/gems/ruby-2.2.3/gems/diff-lcs-1.2.5/lib
+  38. /home/ubuntu-admin/.rvm/gems/ruby-2.2.3/gems/daemons-1.2.2/lib
+  39. /home/ubuntu-admin/.rvm/gems/ruby-2.2.3/gems/cri-2.7.0/lib
+  40. /home/ubuntu-admin/.rvm/gems/ruby-2.2.3/gems/commonjs-0.2.7/lib
+  41. /home/ubuntu-admin/.rvm/gems/ruby-2.2.3/gems/colored-1.2/lib
+  42. /home/ubuntu-admin/.rvm/gems/ruby-2.2.3/gems/coderay-1.1.0/lib
+  43. /home/ubuntu-admin/.rvm/gems/ruby-2.2.3/gems/celluloid-0.16.0/lib
+  44. /home/ubuntu-admin/.rvm/gems/ruby-2.2.3/gems/timers-4.0.1/lib
+  45. /home/ubuntu-admin/.rvm/gems/ruby-2.2.3/gems/hitimes-1.2.2/lib
+  46. /home/ubuntu-admin/.rvm/gems/ruby-2.2.3/extensions/x86_64-linux/2.2.0/hitimes-1.2.2
+  47. /home/ubuntu-admin/.rvm/gems/ruby-2.2.3/gems/builder-3.2.2/lib
+  48. /home/ubuntu-admin/.rvm/gems/ruby-2.2.3/gems/adsf-1.2.0/lib
+  49. /home/ubuntu-admin/.rvm/gems/ruby-2.2.3/gems/rack-1.6.0/lib
+  50. /home/ubuntu-admin/.rvm/gems/ruby-2.2.3/gems/bundler-1.11.2/lib
+  51. /home/ubuntu-admin/.rvm/rubies/ruby-2.2.3/lib/ruby/site_ruby/2.2.0
+  52. /home/ubuntu-admin/.rvm/rubies/ruby-2.2.3/lib/ruby/site_ruby/2.2.0/x86_64-linux
+  53. /home/ubuntu-admin/.rvm/rubies/ruby-2.2.3/lib/ruby/site_ruby
+  54. /home/ubuntu-admin/.rvm/rubies/ruby-2.2.3/lib/ruby/vendor_ruby/2.2.0
+  55. /home/ubuntu-admin/.rvm/rubies/ruby-2.2.3/lib/ruby/vendor_ruby/2.2.0/x86_64-linux
+  56. /home/ubuntu-admin/.rvm/rubies/ruby-2.2.3/lib/ruby/vendor_ruby
+  57. /home/ubuntu-admin/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0
+  58. /home/ubuntu-admin/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/x86_64-linux
